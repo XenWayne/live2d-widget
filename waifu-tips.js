@@ -17,19 +17,19 @@ function loadWidget(config) {
 	}
 	localStorage.removeItem("waifu-display");
 	sessionStorage.removeItem("waifu-text");
-	document.body.insertAdjacentHTML("beforeend", `<div id="waifu">
-			<div id="waifu-tips"></div>
-			<canvas id="live2d" width="800" height="800"></canvas>
-			   <div id="waifu-tool">
-			 	<span class="fa fa-lg fa-comment"></span>
-			 	<span class="fa fa-lg fa-paper-plane"></span>
-			//	<span class="fa fa-lg fa-user-circle"></span>
-			// 	<span class="fa fa-lg fa-street-view"></span>
-			 	<span class="fa fa-lg fa-camera-retro"></span>
-			// 	<span class="fa fa-lg fa-info-circle"></span>
-			 	<span class="fa fa-lg fa-times"></span>
-			   </div>
-		</div>`);
+// 	document.body.insertAdjacentHTML("beforeend", `<div id="waifu">
+// 			<div id="waifu-tips"></div>
+// 			<canvas id="live2d" width="800" height="800"></canvas>
+// 			   <div id="waifu-tool">
+// 			 	<span class="fa fa-lg fa-comment"></span>
+// 			 	<span class="fa fa-lg fa-paper-plane"></span>
+// 				<span class="fa fa-lg fa-user-circle"></span>
+// 			 	<span class="fa fa-lg fa-street-view"></span>
+// 			 	<span class="fa fa-lg fa-camera-retro"></span>
+// 			 	<span class="fa fa-lg fa-info-circle"></span>
+// 			 	<span class="fa fa-lg fa-times"></span>
+// 			   </div>
+// 		</div>`);
 	// https://stackoverflow.com/questions/24148403/trigger-css-transition-on-appended-element
 	setTimeout(() => {
 		document.getElementById("waifu").style.bottom = 0;
