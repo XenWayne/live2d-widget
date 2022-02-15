@@ -28,7 +28,7 @@ function loadWidget(config) {
 			 	<span class="fa fa-lg fa-camera-retro"></span>
 			// 	<span class="fa fa-lg fa-info-circle"></span>
 			 	<span class="fa fa-lg fa-times"></span>
-			// </div>
+			   </div>
 		</div>`);
 	// https://stackoverflow.com/questions/24148403/trigger-css-transition-on-appended-element
 	setTimeout(() => {
@@ -163,7 +163,7 @@ function loadWidget(config) {
 		if (modelId === null) {
 			// 首次访问加载 指定模型 的 指定材质
 			modelId = 1; // 模型 ID
-			modelTexturesId = 53; // 材质 ID
+			modelTexturesId = 1; // 材质 ID
 		}
 		loadModel(modelId, modelTexturesId);
 		fetch(waifuPath)
