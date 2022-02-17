@@ -6,7 +6,6 @@ const live2d_path = "https://cdn.jsdelivr.net/gh/XenWayne/live2d-widget@master/"
 function loadExternalResource(url, type) {
 	return new Promise((resolve, reject) => {
 		let tag;
-
 		if (type === "css") {
 			tag = document.createElement("link");
 			tag.rel = "stylesheet";
@@ -41,7 +40,6 @@ if (screen.width >= 768) {
 // initWidget 第一个参数为 waifu-tips.json 的路径，第二个参数为 API 地址
 // API 后端可自行搭建，参考 https://github.com/fghrsh/live2d_api
 // 初始化看板娘会自动加载指定目录下的 waifu-tips.json
-
 console.log(`
   く__,.ヘヽ.        /  ,ー､ 〉
            ＼ ', !-─‐-i  /  /´
