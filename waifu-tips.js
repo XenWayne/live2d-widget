@@ -23,10 +23,10 @@ function loadWidget(config) {
 			<div id="waifu-tool">
 				<span class="fa fa-lg fa-comment"></span>
 				<span class="fa fa-lg fa-paper-plane"></span>
-				<span class="fa fa-lg fa-user-circle"></span>
-				<span class="fa fa-lg fa-street-view"></span>
+				// <span class="fa fa-lg fa-user-circle"></span>
+				// <span class="fa fa-lg fa-street-view"></span>
 				<span class="fa fa-lg fa-camera-retro"></span>
-				<span class="fa fa-lg fa-info-circle"></span>
+				// <span class="fa fa-lg fa-info-circle"></span>
 				<span class="fa fa-lg fa-times"></span>
 			</div>
 		</div>`);
@@ -69,16 +69,16 @@ function loadWidget(config) {
 				document.head.appendChild(script);
 			}
 		});
-		document.querySelector("#waifu-tool .fa-user-circle").addEventListener("click", loadOtherModel);
-		document.querySelector("#waifu-tool .fa-street-view").addEventListener("click", loadRandModel);
+		// document.querySelector("#waifu-tool .fa-user-circle").addEventListener("click", loadOtherModel);
+		// document.querySelector("#waifu-tool .fa-street-view").addEventListener("click", loadRandModel);
 		document.querySelector("#waifu-tool .fa-camera-retro").addEventListener("click", () => {
 			showMessage("照好了嘛，是不是很可爱呢？", 6000, 9);
 			Live2D.captureName = "photo.png";
 			Live2D.captureFrame = true;
 		});
-		document.querySelector("#waifu-tool .fa-info-circle").addEventListener("click", () => {
-			open("https://github.com/stevenjoezhang/live2d-widget");
-		});
+		// document.querySelector("#waifu-tool .fa-info-circle").addEventListener("click", () => {
+		// 	open("https://github.com/stevenjoezhang/live2d-widget");
+		// });
 		document.querySelector("#waifu-tool .fa-times").addEventListener("click", () => {
 			localStorage.setItem("waifu-display", Date.now());
 			showMessage("愿你有一天能与重要的人重逢。", 2000, 11);
@@ -91,7 +91,7 @@ function loadWidget(config) {
 		const devtools = () => {};
 		console.log("%c", devtools);
 		devtools.toString = () => {
-			showMessage("哈哈，你打开了控制台，是想要看看我的小秘密吗？", 6000, 9);
+			showMessage("哈哈，你打开了控制台，可不要干坏事啊。", 6000, 9);
 		};
 		window.addEventListener("copy", () => {
 			showMessage("你都复制了些什么呀，转载要记得加上出处哦！", 6000, 9);
